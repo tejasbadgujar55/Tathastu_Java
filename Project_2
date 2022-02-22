@@ -1,0 +1,20 @@
+import java.util.*;
+class Fibbo
+{
+   public static void main(String args[])
+   {
+      int f1=0,f2=1,f3,n,i;
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter the no");
+      n=s.nextInt();
+      System.out.println(f1+"\n"+f2);
+      for(i=3;i<=n;i++)
+      {
+         f3=f1+f2;
+         System.out.println(f3);
+         f1=f2;
+         f2=f3;
+      }
+       System.out.println();
+     }
+   }
