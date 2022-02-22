@@ -1,0 +1,37 @@
+import java.util.*;
+ class Matrix
+ {
+     public static void main(String args[])
+     {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter how many rows you want");
+        int r=s.nextInt();
+        System.out.println("Enter how many columns you want");
+        int c=s.nextInt();
+        int[][] matA=new int[r][c];
+        System.out.println("Enter "+(r*c)+" values:");
+        for(int i=0;i<r;i++)
+        {
+           for(int j=0;j<c;j++)
+           matA[i][j]=s.nextInt();
+        }
+          System.out.println("Original Matrix is:");
+          for(int i=0;i<r;i++)
+          {
+              for(int j = 0; j < c; j++)
+              {
+                 System.out.print(matA[i][j]+"\t");
+               }
+                 System.out.println();
+              }
+                 System.out.println("Transpose of Matrix is:");
+				  for(int i=0;i<c;i++)
+				  {
+				  for (int j = 0; j < r; j++)
+				  {
+				   System.out.print(matA[j][i]+"\t");
+           }
+             System.out.println();
+        }
+ }
+}
