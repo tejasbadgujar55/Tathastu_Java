@@ -1,18 +1,32 @@
-
-class Reverse
+class Diamond
 {
-   public static void main (String args[])
+   public static void main(String args[])
    {
-     String string="Java Programming";
-     String reversedStr="";
+       int i,j,k;
+       for(i=1;i<=5;i++)
+       {
+         for(j=5;j>i;j--)
+         {
+           System.out.print(" ");
+         }
+          for(k=1;k<=(2*i-1);k++)
+          {
+             System.out.print("*");
+           }
+            System.out.print("\n");
+           }
 
-     for(int i=string.length()-1; i>=0; i--)
-     {
-          reversedStr= reversedStr + string.charAt(i);
-
-     }
-       System.out.println("Original string:" + string);
-
-       System.out.println("Reverse of given string:" + reversedStr);
-}
-}
+            for(i=4;i>=1;i--)
+		          {
+		            for(j=5;j>i;j--)
+		            {
+		              System.out.print(" ");
+		            }
+		             for(k=1;k<=(2*i-1);k++)
+		             {
+		                System.out.print("*");
+		              }
+		               System.out.print("\n");
+           }
+          }
+         }
