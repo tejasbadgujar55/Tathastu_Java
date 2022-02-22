@@ -1,32 +1,25 @@
-class Diamond
+import java.util.*;
+class PermutationCombination
 {
-   public static void main(String args[])
+    static long factorial(int num)
    {
-       int i,j,k;
-       for(i=1;i<=5;i++)
+       int f=1;
+       for(int i = 1; i <= num; i++)
        {
-         for(j=5;j>i;j--)
-         {
-           System.out.print(" ");
-         }
-          for(k=1;k<=(2*i-1);k++)
-          {
-             System.out.print("*");
-           }
-            System.out.print("\n");
-           }
-
-            for(i=4;i>=1;i--)
-		          {
-		            for(j=5;j>i;j--)
-		            {
-		              System.out.print(" ");
-		            }
-		             for(k=1;k<=(2*i-1);k++)
-		             {
-		                System.out.print("*");
-		              }
-		               System.out.print("\n");
-           }
-          }
-         }
+           f *=i;
+       }
+         return f;
+    }
+       public static void main(String args[])
+       {
+          Scanner s= new Scanner(System.in);
+          int n=s.nextInt();
+          System.out.print("Enter the value of n: ");
+          int r=s.nextInt();
+          int p = (int)(factorial(n) / factorial(n-r));
+          int c = (int)(factorial(n)
+                     / (factorial(n-r) * factorial(r)));
+          System.out.println("Permutation = " + p);
+          System.out.println("Combination = " + c);
+        }
+     }
