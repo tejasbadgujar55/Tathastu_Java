@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+class Main
+{
+    public static void main(String args[])
+    {
+       ArrayList<String> languages =new ArrayList<>();
+       languages.add("JavaScript");
+       languages.add("Java");
+       languages.add("Python");
+       languages.add("HTML");
+          System.out.println("ArrayList: " + languages);
+          boolean result = languages.remove("Java");
+         System.out.println("Arraylist after remove(): " + languages);
+        }
+     }
